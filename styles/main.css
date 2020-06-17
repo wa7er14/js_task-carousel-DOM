@@ -1,0 +1,112 @@
+h1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400; }
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../fonts/Roboto-Regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+
+.twitter-card {
+  background: #fff;
+  height: 160px;
+  width: 310px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-radius: 4px;
+  border: 1px solid #828282;
+  padding: 20px 15px 10px 25px;
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap; }
+  .twitter-card__message {
+    height: 80px;
+    font-size: 14px;
+    color: #4f4f4f; }
+  .twitter-card__name {
+    margin-left: 8px;
+    margin-top: 5px;
+    font-size: 16px;
+    font-weight: bold; }
+  .twitter-card__avatar {
+    width: 30px;
+    height: 30px; }
+  .twitter-card__ico {
+    position: absolute;
+    top: 25px;
+    right: 15px;
+    width: 15px;
+    height: 12px;
+    background: url("../images/twitter.png"); }
+
+.carousel__btn {
+  width: 47px;
+  height: 47px; }
+  .carousel__btn_next {
+    background: url(../images/slider-btn/next-btn.png); }
+  .carousel__btn_prev {
+    background: url(../images/slider-btn/prev-btn.png); }
+
+body {
+  font-family: Lato, sans-serif; }
+
+ul {
+  margin: 0;
+  padding: 0; }
+
+.wrap {
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  display: grid;
+  grid-template-areas: "btn-prev carousel btn-next" "dots dots dots";
+  justify-items: center;
+  gap: 20px 50px;
+  margin: 0 auto; }
+  .wrap__btn {
+    -ms-flex-item-align: center;
+        align-self: center;
+    cursor: pointer; }
+    .wrap__btn_prev {
+      grid-area: btn-prev; }
+    .wrap__btn_next {
+      grid-area: btn-next; }
+  .wrap__dots {
+    grid-area: dots; }
+
+.carousel {
+  width: 310px;
+  grid-area: carousel;
+  overflow: hidden;
+  list-style-type: none; }
+  .carousel__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: -webkit-transform 0.5s;
+    transition: -webkit-transform 0.5s;
+    transition: transform 0.5s;
+    transition: transform 0.5s, -webkit-transform 0.5s; }
+  .carousel__item:not(:last-child) {
+    margin-right: 20px; }
+  .carousel__dots-wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+  .carousel__dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: lightgrey;
+    -webkit-transition: background-color 0.5s;
+    transition: background-color 0.5s; }
+    .carousel__dot:not(:last-child) {
+      margin-right: 3px; }
+    .carousel__dot_active {
+      background-color: grey; }
+
+/*# sourceMappingURL=main.css.map */
